@@ -1,12 +1,16 @@
 const Header = () => {
   return (
-    <header className="bg-dark text-primary shadow-xl rounded-xl">
-
-      <h1 className="text-xl font-semibold">Ma3 App</h1>
-      <div className="text-sm text-gray-300">Built with Tailwind + React</div>
+    <header className="bg-[#111] px-6 py-4 shadow-md flex justify-between items-center">
+      <h1 className="text-2xl font-bold tracking-wider">🚌 Ma3 Navigator</h1>
+      <nav className="space-x-4">
+        <button className="hover:text-yellow-400">Routes</button>
+        <button className="hover:text-yellow-400">Prices</button>
+        <button className="hover:text-yellow-400">Ratings</button>
+      </nav>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
+
 
