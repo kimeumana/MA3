@@ -1,15 +1,23 @@
-import Header from './components/Header';
+import Header from "./components/Header"
+import Sidebar from "./components/Sidebar"
+import MapView from "./components/MapView"
+import Footer from "./components/Footer"
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#221111] text-white">
+    <div className="min-h-screen bg-[#1a1a1a] text-white flex flex-col">
       <Header />
-      <main className="p-10">
-        <h1 className="text-3xl font-bold">Welcome to Ma3 App 👋</h1>
-      </main>
+      <div className="flex flex-1 overflow-hidden">
+        <Sidebar />
+        <main className="flex-1 p-4">
+          <MapView />
+        </main>
+      </div>
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
 
